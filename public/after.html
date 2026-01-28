@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Library</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .glow-on-hover:hover {
+      box-shadow: 0 0 10px #facc15, 0 0 20px #facc15, 0 0 30px #facc15;
+    }
+  </style>
+</head>
+
+<body class="font-sans leading-relaxed tracking-wide text-gray-800 bg-white/60">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-blue-800 to-blue-600 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-3xl font-bold flex items-center gap-2">
+        📚 <span>LibraryZone</span> 
+      </div>
+      <div class="space-x-6 text-lg font-medium">
+        <a href="login.html" class="hover:text-yellow-300 transition">Login</a>
+        <a href="register.html" class="hover:text-yellow-300 transition">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 bg-white/50 backdrop-blur-md text-blue-900">
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow" data-aos="fade-up">Welcome to LibraryZone</h1>
+    <p class="text-xl md:text-2xl mb-8 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="150">Discover thousands of books. Anytime, anywhere, at your fingertips.</p>
+  </section>
+
+  <!-- Book Catalog Section -->
+  <section id="books" class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-bold text-center mb-16 text-gray-800 underline decoration-blue-500" data-aos="fade-up">Book Catalog</h2>
+
+    <div class="grid gap-12 md:grid-cols-3" data-aos="zoom-in-up" data-aos-delay="100">
+      <!-- Fiction -->
+      <a href="fiction.html" class="block bg-white/80 backdrop-blur-md rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:scale-105">
+        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=800&q=80" alt="Fiction" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 flex items-center gap-2"><i class="fas fa-feather-alt"></i> Fiction</h3>
+          <p class="text-gray-700">Dive into imaginative worlds with gripping plots, unique characters, and emotional storytelling.</p>
+        </div>
+      </a>
+
+      <!-- Science -->
+      <a href="science.html" class="block bg-white/80 backdrop-blur-md rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:scale-105">
+        <img src="https://images.unsplash.com/photo-1581090700227-1e8f9b8d29c1?auto=format&fit=crop&w=800&q=80" alt="Science" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 flex items-center gap-2"><i class="fas fa-atom"></i> Science</h3>
+          <p class="text-gray-700">Explore the universe through discoveries, experiments, and groundbreaking ideas in science.</p>
+        </div>
+      </a>
+
+      <!-- History -->
+      <a href="history.html" class="block bg-white/80 backdrop-blur-md rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:scale-105">
+        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&q=80" alt="History" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-blue-700 mb-2 flex items-center gap-2"><i class="fas fa-landmark"></i> History</h3>
+          <p class="text-gray-700">Uncover the past and learn how historic events shape our world today and in the future.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-white/50 backdrop-blur-md py-20" id="testimonials">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12 text-blue-800" data-aos="fade-right">What Our Readers Say</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center" data-aos="fade-up">
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <p class="italic">“LibraryZone has transformed my reading habits. The collection is amazing!”</p>
+          <h4 class="mt-4 font-bold text-blue-700">- Aditi R.</h4>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <p class="italic">“Simple UI, great experience. Perfect for students like me.”</p>
+          <h4 class="mt-4 font-bold text-blue-700">- Rohan M.</h4>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <p class="italic">“It’s my go-to place for peaceful weekend reading.”</p>
+          <h4 class="mt-4 font-bold text-blue-700">- Neha S.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="py-16 bg-white/50 backdrop-blur-md text-center px-4">
+    <h2 class="text-3xl font-bold text-blue-900 mb-4">Subscribe to Our Newsletter</h2>
+    <p class="text-gray-700 mb-6">Get updates on new arrivals, reading tips, and more!</p>
+    <div class="max-w-md mx-auto flex flex-col sm:flex-row items-center gap-4">
+      <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring focus:ring-yellow-400">
+      <button onclick="subscribeMessage()" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition">Subscribe</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white/50 backdrop-blur-md py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6 text-gray-800">About Us</h2>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        LibraryZone is a modern digital library offering free and easy access to a vast collection of books across multiple genres.
+        Whether you're a student, researcher, or casual reader, our platform makes reading convenient, enjoyable, and accessible to all.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-6 text-center text-sm">
+    &copy; 2025 LibraryZone. All rights reserved. | Designed with ❤️ for book lovers.
+  </footer>
+
+  <!-- Floating Chat Icon -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <button class="bg-blue-700 text-white rounded-full p-4 shadow-lg hover:bg-blue-800 transition transform hover:scale-110" title="Chat Support">
+      <i class="fas fa-comment-dots text-xl"></i>
+    </button>                                                                                                                                        
+  </div>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    function subscribeMessage() {
+      alert("Thanks for subscribing! We will now send all updates to your email.");
+    }
+  </script>
+
+</body>
+</html>
